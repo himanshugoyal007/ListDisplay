@@ -1,0 +1,29 @@
+.container{
+    max-width: 100%;
+    display: inline-flex;
+}
+th{
+    color: rgb(141, 141, 141); 
+    border-bottom-color: lightgray  !important; 
+}
+td{
+    font-weight: 600;
+}
+.nextTr:hover{
+    background: #e7e7e7;
+}
+button{
+    background-color: white;
+    margin-left: 80px;
+    border: none;
+    width: 85px;
+    color: rgb(177, 177, 177);
+    font-weight: 600;
+}
+button:focus{
+    border-bottom: 4px solid black;
+    color: black;
+}
+i{
+padding: 10px;
+}

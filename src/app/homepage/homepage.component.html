@@ -1,0 +1,39 @@
+
+<div  class="container">
+    <div style="overflow-y:scroll;height: 580px;width: 82%;" class="card-table">
+        <div>
+            <table class="table table-responsive">   
+                <thead>
+                    <tr>
+                        <th style="width: 80px">Date</th>
+                        <th style="width:500px">List Name</th>
+                        <th style="width: 160px">No. of Entities</th>
+                        <th>Actions</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr class="nextTr" href="javascript:void(0);" *ngFor="let item of filterCategory | filter:searchKey:'name'">
+                        <td style="color: grey" >{{item.date}}</td>
+                        <td style="font-weight: 600;">{{item.name}}</td>
+                        <td style="text-align: right;padding-right: 50px;" >{{item.entity}}</td>
+                        <td style="color: lightgray;"><span>
+                            <i class="fa fa-envelope-circle-check"></i>
+                            <i class="fa fa-pencil"></i>
+                            <i class="fa fa-share-nodes"></i>
+                            <i class="fa fa-trash-can"></i>
+                        <button (click)=details(item.desc)>Details</button></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="overflow-y:scroll;height: 580px;width: 18%;">
+        <p style="font-size: 11px;background: lightgrey;padding: 10px;margin: 20px 25px;">No description yet <span style="color:blue;font-weight:600;">+ Add Description</span></p>
+        <div style="margin: 4px 11px;padding: 6px;background: #f3f3f3;">
+            {{description}}
+        </div>
+    </div>
+</div>
+
+

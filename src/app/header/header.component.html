@@ -1,0 +1,11 @@
+<header>
+        <div class="d-flex">
+            <span class="select" ><i class="fas fa-list-ul fonti"></i>SAVED LISTS</span>
+            <span ><i class="fa fa-filter fonti"></i>SAVED FILTERS</span>
+            <span ><i class="fa fa-clock-rotate-left fonti"></i>SEARCH HISTORY</span>
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"
+                 placeholder="Search">
+            </div>
+        </div>
+</header>
