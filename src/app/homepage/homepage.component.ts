@@ -29,6 +29,10 @@ export class HomepageComponent implements OnInit {
     this.description=desc;
 
   }
+  reset(){
+    this.description='';
+
+  }
   filter(category:string){
     this.filterCategory = this.list
     .filter((a:any)=>{
